@@ -70,7 +70,7 @@ $(document).ready(function(){
 
         function ran_col() { //function name
             var color = '#'; // hexadecimal starting symbol
-            var letters = ['C0C0C0']; //Set your colors here
+            var letters = ['efefef']; //Set your colors here
             color += letters[Math.floor(Math.random() * letters.length)];
 			
 			var div = document.getElementsByClassName("thumbnail"); 
