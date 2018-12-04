@@ -58,7 +58,15 @@ $(document).ready(function(){
   window.FJS = FJS;
   
   ran_col();
+  changeBackground();
 });
+		
+	function changeBackground() {
+            var i=1;
+            for(i=1;i<=250;i++){
+            document.getElementById("fjs_"+i).style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16); 
+            }
+        }
 
         function ran_col() { //function name
             var color = '#'; // hexadecimal starting symbol
