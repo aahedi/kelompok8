@@ -56,8 +56,21 @@ $(document).ready(function(){
   */
 
   window.FJS = FJS;
+  
+  ran_col();
 });
 
+        function ran_col() { //function name
+            var color = '#'; // hexadecimal starting symbol
+            var letters = ['C0C0C0']; //Set your colors here
+            color += letters[Math.floor(Math.random() * letters.length)];
+			
+			var div = document.getElementsByClassName("thumbnail"); 
+			for (var i = 0; i < div.length; i++) {
+            div[i].style.background = color; // Setting the random color on your div element.
+			}
+        }
+		
 function initSliders(){
   $("#rating_slider").slider({
     min: 8,
